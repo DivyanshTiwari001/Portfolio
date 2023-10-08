@@ -21,7 +21,7 @@
 }
 .my-desc{
     margin-bottom: 10px;
-    font-size:calc(20px+1vw);
+    font-size:20px;
     overflow-wrap:break-word;
 }
 
