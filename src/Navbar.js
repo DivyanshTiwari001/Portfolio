@@ -4,13 +4,13 @@ import './Navbar.css'
 let i = 1;
 function toggleNavList(){
     const parent = document.querySelector('#mynavBar');
-    const elem = document.querySelector('.nav-list');
+    const elem = document.querySelector('#mynavlist');
     if(i>0){
-        elem.style.display = 'block';
+        elem.className = 'nav-list-modified'
         parent.className = 'nav-bar-modified';
     }
     else {
-        elem.style.display = 'none';
+        elem.className = 'nav-list'; 
         parent.className = 'navbar';
     }
     i = -i;
@@ -23,7 +23,7 @@ function Navbar(){
             <div className='name'><h3>Divyansh Tiwari</h3></div>
             <div className='toggle-list'><p onClick={toggleNavList}>&#9776;</p></div>
             </div>
-            <ul className="nav-list">
+            <ul className="nav-list" id='mynavlist'>
                 <li className='list-item'><NavLink to='/' className='nav-link'>Home</NavLink></li>
                 <li className='list-item'><NavLink to='/about' className='nav-link'>About me</NavLink></li>
                 <li className='list-item'><NavLink to='/achievements' className='nav-link'>Achievements</NavLink></li>
