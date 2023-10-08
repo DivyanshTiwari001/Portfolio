@@ -1,11 +1,28 @@
 import react from 'react'
 import {NavLink} from 'react-router-dom'
 import './Navbar.css'
+let i = 1;
+function toggleNavList(){
+    const parent = document.querySelector('#mynavBar');
+    const elem = document.querySelector('.nav-list');
+    if(i>0){
+        elem.style.display = 'block';
+        parent.className = 'nav-bar-modified';
+    }
+    else {
+        elem.style.display = 'none';
+        parent.className = 'navbar';
+    }
+    i = -i;
+}
 function Navbar(){
     return(
         
-        <div className="navbar">
+        <div className="navbar" id='mynavBar'>
+            <div className='name-toggle'>
             <div className='name'><h3>Divyansh Tiwari</h3></div>
+            <div className='toggle-list'><p onClick={toggleNavList}>&#9776;</p></div>
+            </div>
             <ul className="nav-list">
                 <li className='list-item'><NavLink to='/' className='nav-link'>Home</NavLink></li>
                 <li className='list-item'><NavLink to='/about' className='nav-link'>About me</NavLink></li>
