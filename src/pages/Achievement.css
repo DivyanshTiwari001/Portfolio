@@ -1,7 +1,54 @@
 .my-ach{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    /* column-gap: 10px; */
     align-items: center;
+    margin-top:50px;
+}
+.card-container{
+    background-color: #c9ccd3;
+    padding:20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width:800px;
+    width: max-content;
+    
+}
+.next-prev{
+    font-size: 8rem;
+    cursor: pointer;
+    color:#141c3b;
+    align-self: center;
+}
+#prev{
+    position: relative;
+    animation: 0.4s linear 0s infinite alternate leftmovement;
+}
+@keyframes leftmovement{
+    from{
+        /* background-color: red; */
+        left: 5px;
+    }
+    to{
+        /* background-color: green; */
+        left: 0px;
+    }
+}
+#next{
+    position: relative;
+    animation: 0.4s linear 0s infinite alternate rightmovement;
+}
+@keyframes rightmovement{
+    from{
+        /* background-color: red; */
+        right: 5px;
+    }
+    to{
+        /* background-color: green; */
+        right: 0px;
+    }
 }

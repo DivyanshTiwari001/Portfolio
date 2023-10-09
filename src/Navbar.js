@@ -1,11 +1,11 @@
 import react from 'react'
 import {NavLink} from 'react-router-dom'
 import './Navbar.css'
-let i = 1;
+let i = true;
 function toggleNavList(){
     const parent = document.querySelector('#mynavBar');
     const elem = document.querySelector('#mynavlist');
-    if(i>0){
+    if(i){
         elem.className = 'nav-list-modified'
         parent.className = 'nav-bar-modified';
     }
@@ -13,7 +13,7 @@ function toggleNavList(){
         elem.className = 'nav-list'; 
         parent.className = 'navbar';
     }
-    i = -i;
+    i = !i;
 }
 function Navbar(){
     return(

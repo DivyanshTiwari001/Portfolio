@@ -1,8 +1,31 @@
-import react from 'react'
+import React, {useState} from 'react'
 import AchievementElement from './AchievementElement.js' 
 import './Achievement.css'
-
+let i = 0;
 function Achievement(){
+    const [index ,setIndex] = useState(0);
+    function prevcard(){
+        console.log(i);
+        if(i>0){
+            i = i - 2;
+            setIndex(i); 
+        }
+        else{
+            i = 0;
+            setIndex(i);
+        }
+    }
+    function nextcard(){
+        console.log(i);
+        if(i<=8){
+            i = i + 2;
+            setIndex(i); 
+        }
+        else{
+             i = 0;
+             setIndex(i);  
+        }
+    }
     const ref = [
         {
             title:'Postman Student Expert',
@@ -60,7 +83,9 @@ function Achievement(){
     })
     return(
         <div className='my-ach'>
-           {arr} 
+            <p onClick={prevcard} className='next-prev' id='prev'>&#8249;</p>
+            <div className='card-container'>{arr[index]}{arr[index+1]}</div>
+            <p onClick={nextcard} className='next-prev' id='next'>&#8250;</p>
         </div>
     );
 }
