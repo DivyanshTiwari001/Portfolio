@@ -7,7 +7,8 @@
     margin-top:50px;
 }
 .card-container{
-    background-color: #c9ccd3;
+    background-color: #e8eaef;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.666);
     padding:20px;
     margin: 0;
     display: flex;
