@@ -18,7 +18,7 @@ function Home(){
             setPhase('waiting');
             setTimeout(()=>{
                 setPhase('typing');
-            },1000)
+            },3000)
         }
     }
     useEffect(() => { 
@@ -28,7 +28,7 @@ function Home(){
             } 
         }, 100); 
         return () => clearInterval(interval); 
-    },[]);
+    });
     return(
         <div className="home-elem">
             <div className='intro-elem-container'><h1 className='intro-elem'>{intro}</h1></div>
