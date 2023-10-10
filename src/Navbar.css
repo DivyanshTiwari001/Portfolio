@@ -57,9 +57,11 @@
 }
 .list-item:hover{
     background-color: #e9edf949;
+    transition: background-color 0.5s;
 }
 .list-item:hover .nav-link{
-    color:orange
+    color:orange;
+    transition:color 1s;
 }
 @media (max-width:900px) {
     .navbar{
