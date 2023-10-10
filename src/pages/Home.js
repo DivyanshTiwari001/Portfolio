@@ -18,7 +18,7 @@ function Home(){
             setPhase('waiting');
             setTimeout(()=>{
                 setPhase('typing');
-            },3000)
+            },1000)
         }
     }
     useEffect(() => { 
