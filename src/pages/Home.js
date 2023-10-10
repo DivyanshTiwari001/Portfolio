@@ -28,7 +28,7 @@ function Home(){
             } 
         }, 100); 
         return () => clearInterval(interval); 
-    },[phase]);
+    },[]);
     return(
         <div className="home-elem">
             <div className='intro-elem-container'><h1 className='intro-elem'>{intro}</h1></div>
