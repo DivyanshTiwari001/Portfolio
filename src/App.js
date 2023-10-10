@@ -13,10 +13,10 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route exact path='/' element={<Home></Home>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
-        <Route path='/achievements' element={<Achievement></Achievement>}></Route>
-        <Route path='/projects' element={<Project></Project>}></Route>
+        <Route exact path='/portfolio' element={<Home></Home>}></Route>
+        <Route path='/portfolio/about' element={<About></About>}></Route>
+        <Route path='/portfolio/achievements' element={<Achievement></Achievement>}></Route>
+        <Route path='/portfolio/projects' element={<Project></Project>}></Route>
       </Routes>
     </Router>
   );

@@ -24,10 +24,10 @@ function Navbar(){
             <div className='toggle-list'><p onClick={toggleNavList}>&#9776;</p></div>
             </div>
             <ul className="nav-list" id='mynavlist'>
-                <li className='list-item'><NavLink to='/' className='nav-link'>Home</NavLink></li>
-                <li className='list-item'><NavLink to='/about' className='nav-link'>About me</NavLink></li>
-                <li className='list-item'><NavLink to='/achievements' className='nav-link'>Achievements</NavLink></li>
-                <li className='list-item'><NavLink to='/projects' className='nav-link'>Projects</NavLink></li>
+                <li className='list-item'><NavLink to='/portfolio' className='nav-link'>Home</NavLink></li>
+                <li className='list-item'><NavLink to='/portfolio/about' className='nav-link'>About me</NavLink></li>
+                <li className='list-item'><NavLink to='/portfolio/achievements' className='nav-link'>Achievements</NavLink></li>
+                <li className='list-item'><NavLink to='/portfolio/projects' className='nav-link'>Projects</NavLink></li>
             </ul>
         </div>
     )
