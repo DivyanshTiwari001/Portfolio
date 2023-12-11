@@ -1,12 +1,36 @@
+.home-elem{
+    color:#141c3b;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
 .intro-elem-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin:10px 0px 10px 0;
 }
 .intro-elem{
-    color:rgba(0, 0, 0, 0.568);
+    color:#141c3b;
     text-align: center;
     font-size:calc(24px + 1vw);
-    /* border: 2px solid red; */
     width: fit-content;
+    height: 60px;
+    margin:10px 0px 10px 0px;
+}
+.footer{
+    width: 100%;
+    margin-top: auto;
+}
+.content-header{
+    text-align: center;
+    color:#141c3b;
+}
+.content-body>h4{
+    font-size: 32px;
+    margin-bottom:10px;
+}
+.content-body{
+    margin-top: 20px;
+    padding:10px
 }
